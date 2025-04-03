@@ -29,7 +29,7 @@ class Controller:
         else:
             pygame.event.set_grab(False)
             pygame.mouse.set_visible(False)
-        self._key = [0] = 323
+        self._key = [0] * 323
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
                 self._key = pygame.key.get_pressed()
